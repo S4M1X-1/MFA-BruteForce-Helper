@@ -52,33 +52,31 @@ curl --version
 Clone the repository:
 
 ```bash
-git clone https://github.com/USERNAME/mfa-code-bruteforce-helper.git
+git clone https://github.com/S4M1X-1/MFA-BruteForce-Helper.git
 ```
 
 Enter the project directory:
 
 ```bash
-cd mfa-code-bruteforce-helper
+cd MFA-BruteForce-Helper
 ```
 
 Make the script executable:
 
 ```bash
-chmod +x brute_mfa.sh
+chmod +x MFA_BruteForce.sh
 ```
 
 ---
 
 ## Configuration
 
-Before running the script, edit the following variables inside `brute_mfa.sh`:
+Before running the script, edit the following variables inside `MFA_BruteForce.sh`:
 
 ```bash
-URL="https://target-website.com/login2"
+URL="https://target-website.com/login"
 
-SESSION="your-session-cookie"
-
-VERIFY="your-verification-cookie"
+$COOKIE="Your Cookie"
 ```
 
 Replace them with the values from your authorized testing environment.
@@ -90,7 +88,7 @@ Replace them with the values from your authorized testing environment.
 Run the script:
 
 ```bash
-./brute_mfa.sh
+./MFA_BruteForce.sh
 ```
 
 The script will automatically test:
